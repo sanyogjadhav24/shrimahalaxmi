@@ -26,7 +26,7 @@ export function Footer() {
               <span className="block text-[11px] tracking-[0.28em] text-[#e07a1f] font-display">CONSTRUCTION</span>
             </span>
           </div>
-          <p className="text-sm leading-relaxed"><strong className="text-white">Government Contractor &amp; Civil Engineering Experts</strong>. Building reliable public infrastructure across Maharashtra since <span className="text-[#e07a1f]">1998</span>.</p>
+          <p className="text-sm leading-relaxed"><strong className="text-white">Government Contractor &amp; Civil Engineering Experts</strong>. Building reliable public infrastructure across Maharashtra since <span className="text-[#e07a1f]">2024</span>.</p>
         </div>
         <div>
           <h4 className="text-white font-display uppercase tracking-wider text-base mb-5">Quick Links</h4>
