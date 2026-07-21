@@ -40,8 +40,8 @@ export function Header() {
               <img src={logo} alt="Shri Mahalaxmi Construction logo" className="w-full h-full object-contain rounded" />
             </div>
             <span className="leading-tight">
-              <span className="block font-display font-bold text-[20px] tracking-widest text-[#1e1e2d]">SMC</span>
-              <span className="block text-[11px] tracking-[0.25em] text-[#e07a1f] font-display uppercase">Shri Mahalaxmi</span>
+              <span className="block font-display font-bold text-[20px] tracking-wide text-[#1e1e2d]">Shri Mahalaxmi</span>
+              <span className="block text-[10px] tracking-[0.25em] text-[#e07a1f] font-display uppercase">Construction</span>
             </span>
           </Link>
           <nav className="hidden lg:flex items-center gap-8 font-display uppercase text-[14px] tracking-wider text-[#1e1e2d]">
