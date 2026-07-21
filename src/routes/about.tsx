@@ -26,7 +26,7 @@ function About() {
           <div className="bg-white p-8 border-t-4 border-[#e07a1f]">
             <SectionTitle eyebrow="Equipment We Own" title="Ready for Site Operations" />
             <ul className="-mt-5 grid gap-3 sm:grid-cols-2 text-sm text-muted-foreground">
-              {EQUIPMENT.map((item, index) => <li key={item} className="flex gap-2"><span className="text-[#e07a1f] font-bold">{index + 1}.</span>{item}</li>)}
+              {EQUIPMENT.map((item) => <li key={item}>{item}</li>)}
             </ul>
           </div>
         </div>
