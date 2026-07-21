@@ -1,13 +1,17 @@
 import { o as __toESM } from "../_runtime.mjs";
+import { i as PROJECT_CATS } from "./site-CrHWebk2.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { a as PROJECT_CATS, c as SectionTitle, i as PROJECTS, l as SiteLayout } from "./SectionTitle-C-hkdPL8.mjs";
+import { t as SiteLayout } from "./Layout-CoCZtaet.mjs";
 import { t as PageBanner } from "./PageBanner-DQGGheOF.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/projects-D112FJQn.js
+import { t as SectionTitle } from "./SectionTitle-BZ9pgjOw.mjs";
+import { t as Route } from "./projects-Ic4S1p7p.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/projects-ChYx8abV.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function Projects() {
+	const { projects } = Route.useLoaderData();
 	const [cat, setCat] = (0, import_react.useState)("All");
-	const items = cat === "All" ? PROJECTS : PROJECTS.filter((p) => p.cat === cat);
+	const items = cat === "All" ? projects : projects.filter((p) => p.category === cat);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(SiteLayout, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PageBanner, {
 		eyebrow: "Recent work",
 		title: "Our Projects",
@@ -36,7 +40,7 @@ function Projects() {
 						className: "relative group overflow-hidden",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-								src: p.image,
+								src: p.image_url,
 								alt: p.title,
 								className: "w-full h-72 object-cover group-hover:scale-105 transition"
 							}),
@@ -46,7 +50,7 @@ function Projects() {
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 										className: "text-[11px] uppercase tracking-[0.28em] text-[#e07a1f] mb-2",
-										children: p.cat
+										children: p.category
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "font-display font-bold uppercase text-xl mb-1",

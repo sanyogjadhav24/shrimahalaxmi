@@ -1,9 +1,11 @@
+import { c as WHY_US, n as CONTACT, o as STATS, s as TEAM_ROLES } from "./site-CrHWebk2.mjs";
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { c as SectionTitle, d as WHY_US, l as SiteLayout, n as CONTACT, s as STATS, u as TEAM_ROLES } from "./SectionTitle-C-hkdPL8.mjs";
+import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { t as SiteLayout } from "./Layout-CoCZtaet.mjs";
 import { t as PageBanner } from "./PageBanner-DQGGheOF.mjs";
+import { t as SectionTitle } from "./SectionTitle-BZ9pgjOw.mjs";
 import { t as TeamRoles } from "./TeamRoles-CZlRdYCn.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/about-Dx9L6kr3.js
+//#region node_modules/.nitro/vite/services/ssr/assets/about-CVyn7PUq.js
 var import_jsx_runtime = require_jsx_runtime();
 function About() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(SiteLayout, { children: [

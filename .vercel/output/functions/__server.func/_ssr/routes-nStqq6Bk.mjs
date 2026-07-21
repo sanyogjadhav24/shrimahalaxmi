@@ -1,9 +1,12 @@
 import { o as __toESM } from "../_runtime.mjs";
+import { a as SERVICES, c as WHY_US, n as CONTACT, o as STATS, r as HERO_SLIDES, s as TEAM_ROLES, t as BLOG } from "./site-CrHWebk2.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { c as SectionTitle, d as WHY_US, i as PROJECTS, l as SiteLayout, n as CONTACT, o as SERVICES, r as HERO_SLIDES, s as STATS, t as BLOG, u as TEAM_ROLES } from "./SectionTitle-C-hkdPL8.mjs";
+import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { t as SiteLayout } from "./Layout-CoCZtaet.mjs";
+import { t as SectionTitle } from "./SectionTitle-BZ9pgjOw.mjs";
 import { t as TeamRoles } from "./TeamRoles-CZlRdYCn.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-DdjyRdeJ.js
+import { t as Route } from "./routes-BTIIaRsc.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-nStqq6Bk.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function HeroSlider() {
@@ -92,6 +95,7 @@ function HeroSlider() {
 	});
 }
 function Index() {
+	const { projects } = Route.useLoaderData();
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(SiteLayout, { children: [
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeroSlider, {}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
@@ -248,11 +252,11 @@ function Index() {
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 						className: "grid md:grid-cols-2 lg:grid-cols-3 gap-6",
-						children: PROJECTS.map((p) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						children: projects.map((p) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "relative group overflow-hidden",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-									src: p.image,
+									src: p.image_url,
 									alt: p.title,
 									className: "w-full h-72 object-cover group-hover:scale-105 transition"
 								}),
@@ -262,7 +266,7 @@ function Index() {
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 											className: "text-[11px] uppercase tracking-[0.28em] text-[#e07a1f] mb-2",
-											children: p.cat
+											children: p.category
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "font-display font-bold uppercase text-xl mb-1",

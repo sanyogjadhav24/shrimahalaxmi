@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { CONTACT } from "@/data/site";
-import { Building2 } from "lucide-react";
+import logo from "@/assets/logo.jpeg";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -36,8 +36,8 @@ export function Header() {
       <div className="bg-white border-b border-black/5">
         <div className="max-w-[1280px] mx-auto px-6 h-[92px] flex items-center justify-between gap-6">
           <Link to="/" className="flex items-center gap-4 group">
-            <div className="w-12 h-12 bg-[#e07a1f] rounded-lg text-white flex items-center justify-center flex-shrink-0 group-hover:bg-[#c86a17] transition-colors shadow-md">
-              <Building2 size={24} strokeWidth={2.5} />
+            <div className="w-14 h-14 bg-white rounded-lg shadow-md border border-gray-100 flex-shrink-0 overflow-hidden flex items-center justify-center p-1">
+              <img src={logo} alt="Shri Mahalaxmi Construction logo" className="w-full h-full object-contain rounded" />
             </div>
             <span className="leading-tight">
               <span className="block font-display font-bold text-[20px] tracking-widest text-[#1e1e2d]">SMC</span>

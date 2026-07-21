@@ -1,285 +1,10 @@
 import { o as __toESM } from "../_runtime.mjs";
+import { a as SERVICES, n as CONTACT } from "./site-CrHWebk2.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/SectionTitle-C-hkdPL8.js
+import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/Layout-CoCZtaet.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var MD_default = "/assets/MD-zhAmEb5_.jpg";
-var Acco_default = "/assets/Acco-D9vb9Na8.jpeg";
-var CONTACT = {
-	address: "Vaishnav Nivas, Dawkharmala Shiroli Trfe ale, Tal- Junnar, Dist-Pune 412411",
-	phone: "+91 9112072424",
-	email: "info@shrimahalaxmiconstruction.com",
-	hours: "Mon - Sat: 9:00 AM - 7:00 PM"
-};
-var HERO_SLIDES = [
-	{
-		subtitle: "Building The Nation",
-		title: "Trusted Government\nCivil Contractor",
-		text: "Delivering large-scale infrastructure, roads, bridges and public works with precision, safety and on-time completion since 1998.",
-		cta: {
-			label: "Discover More",
-			to: "/services"
-		},
-		image: "https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?crop=entropy&cs=srgb&fm=jpg&q=85"
-	},
-	{
-		subtitle: "Infrastructure Excellence",
-		title: "Bridges, Roads &\nPublic Structures",
-		text: "Class-A registered contractor with PWD, NHAI and Municipal Corporations across Maharashtra.",
-		cta: {
-			label: "Our Projects",
-			to: "/projects"
-		},
-		image: "https://images.unsplash.com/photo-1633363961301-4f100a78e92d?crop=entropy&cs=srgb&fm=jpg&q=85"
-	},
-	{
-		subtitle: "Engineering the Future",
-		title: "Strong Foundations\nStronger Communities",
-		text: "Over two decades of building the infrastructure that connects, protects and powers India.",
-		cta: {
-			label: "Get a Quote",
-			to: "/contact"
-		},
-		image: "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?crop=entropy&cs=srgb&fm=jpg&q=85"
-	}
-];
-var SERVICES = [
-	{
-		title: "Roads & Highways",
-		desc: "PWD approved road construction, resurfacing and highway expansion for state and national projects.",
-		image: "https://images.unsplash.com/photo-1587582423116-ec07293f0395?crop=entropy&cs=srgb&fm=jpg&q=85"
-	},
-	{
-		title: "Bridges & Flyovers",
-		desc: "RCC and pre-stressed concrete bridge construction with modern engineering and safety compliance.",
-		image: "https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?crop=entropy&cs=srgb&fm=jpg&q=85"
-	},
-	{
-		title: "Public Buildings",
-		desc: "Government offices, schools, hospitals and municipal facilities built to specification.",
-		image: "https://images.unsplash.com/photo-1503708928676-1cb796a0891e?crop=entropy&cs=srgb&fm=jpg&q=85"
-	},
-	{
-		title: "Water Works & Drainage",
-		desc: "Municipal water supply lines, storm drainage, sewage treatment plant civil works.",
-		image: "https://images.unsplash.com/photo-1559843788-693858bf7338?crop=entropy&cs=srgb&fm=jpg&q=85"
-	},
-	{
-		title: "Earthworks & Excavation",
-		desc: "Site preparation, heavy excavation, embankment and land development for infrastructure.",
-		image: "https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?crop=entropy&cs=srgb&fm=jpg&q=85"
-	},
-	{
-		title: "Industrial Construction",
-		desc: "Warehouses, factories and MIDC industrial civil work with structural steel and RCC.",
-		image: "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?crop=entropy&cs=srgb&fm=jpg&q=85"
-	}
-];
-var PROJECTS = [
-	{
-		cat: "Roads & Highways",
-		title: "Pune-Solapur Highway Expansion",
-		location: "Maharashtra",
-		year: "2024",
-		image: "https://images.unsplash.com/photo-1587582423116-ec07293f0395?crop=entropy&cs=srgb&fm=jpg&q=85"
-	},
-	{
-		cat: "Bridges",
-		title: "Krishna River RCC Bridge",
-		location: "Sangli, MH",
-		year: "2023",
-		image: "https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?crop=entropy&cs=srgb&fm=jpg&q=85"
-	},
-	{
-		cat: "Public Buildings",
-		title: "District Hospital, Satara",
-		location: "Satara, MH",
-		year: "2023",
-		image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=srgb&fm=jpg&q=85"
-	},
-	{
-		cat: "Water Works",
-		title: "MIDC Water Pipeline Grid",
-		location: "Pune, MH",
-		year: "2022",
-		image: "https://images.unsplash.com/photo-1559843788-693858bf7338?crop=entropy&cs=srgb&fm=jpg&q=85"
-	},
-	{
-		cat: "Industrial",
-		title: "Chakan Industrial Warehouse",
-		location: "Chakan, MH",
-		year: "2024",
-		image: "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?crop=entropy&cs=srgb&fm=jpg&q=85"
-	},
-	{
-		cat: "Bridges",
-		title: "Nashik Flyover Project",
-		location: "Nashik, MH",
-		year: "2022",
-		image: "https://images.unsplash.com/photo-1633363961301-4f100a78e92d?crop=entropy&cs=srgb&fm=jpg&q=85"
-	}
-];
-var PROJECT_CATS = [
-	"All",
-	"Roads & Highways",
-	"Bridges",
-	"Public Buildings",
-	"Water Works",
-	"Industrial"
-];
-var WHY_US = [
-	{
-		title: "Class-A Registered",
-		desc: "Government approved contractor with PWD, NHAI, MJP and Municipal Corporations."
-	},
-	{
-		title: "ISO 9001:2015 Certified",
-		desc: "Quality Management System certified for civil engineering and infrastructure work."
-	},
-	{
-		title: "On-Time Delivery",
-		desc: "Proven track record of completing projects on schedule and within budget."
-	},
-	{
-		title: "Safety First",
-		desc: "Strict adherence to workplace safety standards and worker welfare policies."
-	}
-];
-var TEAM_ROLES = [
-	{
-		title: "MD",
-		summary: "Overall leadership and business direction.",
-		members: [{
-			name: "Prathamesh Jadhav",
-			role: "Managing Director",
-			image: MD_default
-		}]
-	},
-	{
-		title: "CORE MEMBERS",
-		summary: "Key people supporting day-to-day execution.",
-		members: [
-			{
-				name: "Anil Patil",
-				role: "Chief Engineer",
-				image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80"
-			},
-			{
-				name: "Suresh Kulkarni",
-				role: "Project Manager",
-				image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=80"
-			},
-			{
-				name: "Vikram Jadhav",
-				role: "Site Supervisor",
-				image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80"
-			}
-		]
-	},
-	{
-		title: "MANAGING TEAM",
-		summary: "Planning, coordination, and project control.",
-		members: [{
-			name: "Prathamesh Jadhav",
-			role: "Managing Director",
-			image: MD_default
-		}, {
-			name: "Suresh Kulkarni",
-			role: "Project Manager",
-			image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=80"
-		}]
-	},
-	{
-		title: "ACCOUNTANTS",
-		summary: "Billing, accounts, and finance support.",
-		members: [{
-			name: "Sanyog Jadhav",
-			role: "Accountant",
-			image: Acco_default
-		}]
-	},
-	{
-		title: "ENGINEERS",
-		summary: "Site engineering and technical supervision.",
-		members: [{
-			name: "Anil Patil",
-			role: "Chief Engineer",
-			image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80"
-		}]
-	},
-	{
-		title: "SAFETY ENGINEER",
-		summary: "Health, safety, and compliance monitoring.",
-		members: [{
-			name: "Open Position",
-			role: "Safety Engineer",
-			image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80"
-		}]
-	},
-	{
-		title: "MATERIAL INCHARGE",
-		summary: "Procurement and material coordination.",
-		members: [{
-			name: "Trushant Jadhav",
-			role: "Material Incharge",
-			image: "https://images.unsplash.com/photo-1519608425089-7f3bfa9e7e0b?w=800&q=80"
-		}]
-	},
-	{
-		title: "MECHANICAL ENGINEER",
-		summary: "Plant, equipment, and machinery oversight.",
-		members: [{
-			name: "Open Position",
-			role: "Mechanical Engineer",
-			image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80"
-		}]
-	}
-];
-var STATS = [
-	{
-		value: "27+",
-		label: "Years of Experience"
-	},
-	{
-		value: "340+",
-		label: "Projects Delivered"
-	},
-	{
-		value: "180+",
-		label: "Skilled Workforce"
-	},
-	{
-		value: "42",
-		label: "Government Awards"
-	}
-];
-var BLOG = [
-	{
-		cat: "Infrastructure",
-		date: "Jun 12, 2025",
-		author: "Admin",
-		title: "The Future of Highway Construction in India",
-		desc: "How new materials and smart engineering are reshaping our national road network.",
-		image: "https://images.unsplash.com/photo-1587582423116-ec07293f0395?crop=entropy&cs=srgb&fm=jpg&q=85"
-	},
-	{
-		cat: "Safety",
-		date: "May 24, 2025",
-		author: "Anil Patil",
-		title: "Safety Standards on Large Bridge Projects",
-		desc: "A look inside how we maintain zero-accident records on complex bridge sites.",
-		image: "https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?crop=entropy&cs=srgb&fm=jpg&q=85"
-	},
-	{
-		cat: "Sustainability",
-		date: "Apr 08, 2025",
-		author: "Admin",
-		title: "Sustainable Concrete in Public Works",
-		desc: "Our shift to greener concrete mixes for government building projects.",
-		image: "https://images.unsplash.com/photo-1503708928676-1cb796a0891e?crop=entropy&cs=srgb&fm=jpg&q=85"
-	}
-];
 var logo_default = "/assets/logo-6D6vuF_P.jpeg";
 var nav = [
 	{
@@ -375,19 +100,22 @@ function Header() {
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
 						to: "/",
-						className: "flex items-center gap-3",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-							src: logo_default,
-							alt: "Shri Mahalaxmi Construction logo",
-							className: "h-12 w-12 rounded-md object-cover"
+						className: "flex items-center gap-4 group",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "w-14 h-14 bg-white rounded-lg shadow-md border border-gray-100 flex-shrink-0 overflow-hidden flex items-center justify-center p-1",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+								src: logo_default,
+								alt: "Shri Mahalaxmi Construction logo",
+								className: "w-full h-full object-contain rounded"
+							})
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 							className: "leading-tight",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "block font-display font-bold text-[18px] tracking-wide text-[#1e1e2d]",
-								children: "SHRI MAHALAXMI"
+								className: "block font-display font-bold text-[20px] tracking-widest text-[#1e1e2d]",
+								children: "SMC"
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "block text-[11px] tracking-[0.28em] text-[#e07a1f] font-display",
-								children: "CONSTRUCTION"
+								className: "block text-[11px] tracking-[0.25em] text-[#e07a1f] font-display uppercase",
+								children: "Shri Mahalaxmi"
 							})]
 						})]
 					}),
@@ -620,24 +348,5 @@ function SiteLayout({ children }) {
 		]
 	});
 }
-function SectionTitle({ eyebrow, title, center = false, light = false }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		className: `${center ? "text-center mx-auto" : ""} max-w-3xl mb-12`,
-		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: `flex items-center gap-3 mb-3 ${center ? "justify-center" : ""}`,
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-[2px] w-10 bg-[#e07a1f]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-					className: "text-[#e07a1f] font-display uppercase tracking-[0.28em] text-sm",
-					children: eyebrow
-				})]
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-				className: `font-display font-bold uppercase text-4xl md:text-5xl leading-tight ${light ? "text-white" : "text-[#1e1e2d]"}`,
-				children: title
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: `mt-5 h-[3px] w-16 bg-[#e07a1f] ${center ? "mx-auto" : ""}` })
-		]
-	});
-}
 //#endregion
-export { PROJECT_CATS as a, SectionTitle as c, WHY_US as d, PROJECTS as i, SiteLayout as l, CONTACT as n, SERVICES as o, HERO_SLIDES as r, STATS as s, BLOG as t, TEAM_ROLES as u };
+export { SiteLayout as t };
