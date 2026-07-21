@@ -24,12 +24,6 @@ export function Header() {
           <div className="flex items-center gap-6 ml-auto">
             <a href={`tel:${CONTACT.phone.replace(/\s/g,'')}`} className="hidden sm:flex items-center gap-2 hover:text-[#e07a1f]"><span className="text-[#e07a1f]">☎</span>{CONTACT.phone}</a>
             <a href={`mailto:${CONTACT.email}`} className="hidden md:flex items-center gap-2 hover:text-[#e07a1f]"><span className="text-[#e07a1f]">✉</span>{CONTACT.email}</a>
-            <div className="flex items-center gap-3 border-l border-white/10 pl-4 text-white/60">
-              <a href="#" aria-label="Facebook" className="hover:text-[#e07a1f]">f</a>
-              <a href="#" aria-label="Twitter" className="hover:text-[#e07a1f]">t</a>
-              <a href="#" aria-label="LinkedIn" className="hover:text-[#e07a1f]">in</a>
-              <a href="#" aria-label="Instagram" className="hover:text-[#e07a1f]">◧</a>
-            </div>
           </div>
         </div>
       </div>
