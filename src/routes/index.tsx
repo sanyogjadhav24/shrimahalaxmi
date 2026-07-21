@@ -5,26 +5,27 @@ import { SectionTitle } from "@/components/site/SectionTitle";
 import { TeamRoles } from "@/components/site/TeamRoles";
 import { SERVICES, WHY_US, TEAM_ROLES, STATS, BLOG, CONTACT, PROJECTS as STATIC_PROJECTS } from "@/data/site";
 import { supabase } from "@/lib/supabase";
+import { useState, useEffect } from "react";
 
-export const Route = createFileRoute("/")({ 
-  loader: async () => {
-    try {
-      const { data, error } = await supabase.from('projects').select('*').limit(6).order('year', { ascending: false });
-      if (error || !data || data.length === 0) {
-        // Fall back to static data if DB is unavailable
-        return { projects: STATIC_PROJECTS.map(p => ({ ...p, category: p.cat, image_url: p.image })) };
-      }
-      return { projects: data };
-    } catch (e) {
-      console.error('[Loader] Failed to fetch projects from Supabase, using static data.', e);
-      return { projects: STATIC_PROJECTS.map(p => ({ ...p, category: p.cat, image_url: p.image })) };
-    }
-  },
-  component: Index 
-});
+export const Route = createFileRoute("/")({ component: Index });
 
 function Index() {
-  const { projects } = Route.useLoaderData();
+  const [projects, setProjects] = useState(
+    STATIC_PROJECTS.map(p => ({ ...p, category: p.cat, image_url: p.image }))
+  );
+
+  useEffect(() => {
+    supabase
+      .from('projects')
+      .select('*')
+      .limit(6)
+      .order('year', { ascending: false })
+      .then(({ data, error }) => {
+        if (!error && data && data.length > 0) setProjects(data);
+      })
+      .catch(() => { /* keep static fallback */ });
+  }, []);
+
   return (
     <SiteLayout>
       <HeroSlider />
