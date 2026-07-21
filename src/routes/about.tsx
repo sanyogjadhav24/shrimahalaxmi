@@ -26,7 +26,7 @@ function About() {
           <div className="bg-white p-8 border-t-4 border-[#e07a1f]">
             <SectionTitle eyebrow="Equipment We Own" title="Ready for Site Operations" />
             <ul className="-mt-5 grid gap-3 sm:grid-cols-2 text-sm text-muted-foreground">
-              {EQUIPMENT.map((item) => <li key={item} className="flex gap-2"><span className="text-[#e07a1f]">âœ“</span>{item}</li>)}
+              {EQUIPMENT.map((item, index) => <li key={item} className="flex gap-2"><span className="text-[#e07a1f] font-bold">{index + 1}.</span>{item}</li>)}
             </ul>
           </div>
         </div>
@@ -47,7 +47,7 @@ function About() {
             <p className="text-muted-foreground leading-relaxed mb-6">The company is focused on expanding into specialised infrastructure projects and road construction, including H.P.C. structures, pipe culverts, minor bridges, retaining walls and side drains. We also undertake work related to highways, metro, bridges and commercial projects.</p>
             <ul className="grid sm:grid-cols-2 gap-3 mb-8 text-sm">
               {["Civil and earthwork execution","Road construction and drainage works","Minor bridges, culverts and retaining walls","Highway, metro and commercial works","Engineering and mechanical support staff","Owned construction equipment fleet"].map(f => (
-                <li key={f} className="flex gap-2"><span className="text-[#e07a1f]">✓</span><span>{f}</span></li>
+                <li key={f} className="flex gap-2"><span className="text-[#e07a1f] font-bold">{index + 1}.</span><span>{f}</span></li>
               ))}
             </ul>
             <div className="flex items-center gap-6 flex-wrap">
