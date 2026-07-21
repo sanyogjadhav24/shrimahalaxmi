@@ -41,8 +41,8 @@ function Index() {
           </div>
           <div>
             <SectionTitle eyebrow="About Our Company" title="Civil and Infrastructure Work Built on Dedication" />
-            <p className="text-muted-foreground leading-relaxed mb-4"><strong className="text-[#1e1e2d]">Shri Mahalaxmi Construction</strong> was established in 2024 by Mr. Prathamesh Jadhav and his brothers. The company brings dedication to civil and earthwork projects, supported by a capable workforce and owned equipment.</p>
-            <p className="text-muted-foreground leading-relaxed mb-6">Our work includes specialised infrastructure and road construction: H.P.C. structures, pipe culverts, minor bridges, retaining walls, side drains, highways, metro, bridges and commercial projects.</p>
+            <p className="text-muted-foreground leading-relaxed mb-4"><strong className="text-[#1e1e2d]">Shri Mahalaxmi Construction</strong> was established in 2024 by Mr. Prathamesh Jadhav & Bros. The peer of company had drive and passion to grow exponentially in the civil and earth work industry. With their constant dedication and support, this property soon became a firm with turnover of more than 4-5 Cr assets and workforce of 50 people.</p>
+            <p className="text-muted-foreground leading-relaxed mb-6">Our company is fully dedicated to expand its working horizon into the field of specialised infrastructure projects or Road Construction including HPC Structures, Pipe Culverts, Minor Bridge, Retaining Walls, Side Drains. We also work in Highways, Railways, Bridge, Commercial, Private etc.</p>
             <ul className="grid sm:grid-cols-2 gap-3 mb-8 text-sm">
               {["Civil and earthwork execution","Road construction and drainage works","Minor bridges, culverts and retaining walls","Highway, metro and commercial works","Engineering and mechanical support staff","Owned construction equipment fleet"].map(f => (
                 <li key={f} className="flex gap-2"><span className="text-[#e07a1f]">✓</span><span>{f}</span></li>

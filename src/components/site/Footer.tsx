@@ -53,6 +53,7 @@ export function Footer() {
             <li className="flex gap-3"><span className="text-[#e07a1f]">☎</span>{CONTACT.phone}</li>
             <li className="flex gap-3"><span className="text-[#e07a1f]">✉</span>{CONTACT.email}</li>
             <li className="flex gap-3"><span className="text-[#e07a1f]">⏱</span>{CONTACT.hours}</li>
+            {CONTACT.gst && <li className="flex gap-3"><span className="text-[#e07a1f]">📋</span>GST: {CONTACT.gst}</li>}
           </ul>
         </div>
       </div>

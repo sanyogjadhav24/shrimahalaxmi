@@ -1,10 +1,11 @@
 import MD_IMAGE from "../assets/MD.jpg";
 
 export const CONTACT = {
-  address: "Vaishnav Nivas, Dawkharmala Shiroli Trfe ale, Tal- Junnar, Dist-Pune 412411",
-  phone: "+91 9112072424",
-  email: "info@shrimahalaxmiconstruction.com",
+  address: "At/P-Shiroli T Ale, Tal-Junnar, Dist-Pune – 412411",
+  phone: "9112072424",
+  email: "shrimahalaxmiconstruction2424@gmail.com",
   hours: "Mon - Sat: 9:00 AM - 7:00 PM",
+  gst: "27CDYPJ9844G1ZO",
 };
 
 export const HERO_SLIDES = [
@@ -73,29 +74,29 @@ export const TEAM_ROLES = [
 
 export const STATS = [
   { value: "2024", label: "Established" },
+  { value: "4-5", label: "Cr Turnover" },
+  { value: "50", label: "Workforce" },
   { value: "4", label: "Board Members" },
-  { value: "50", label: "Skilled Labourers" },
-  { value: "100", label: "Unskilled Labourers" },
 ];
 
 export const WORKFORCE = [
   { role: "Engineering Staff", count: "4" },
-  { role: "Mechanical Staff", count: "10" },
-  { role: "Skilled Labourers", count: "50" },
-  { role: "Unskilled Labourers", count: "100" },
+  { role: "Mechanical/Machinery Staff", count: "10" },
+  { role: "Skilled Labours", count: "15" },
+  { role: "Unskilled Labours", count: "35" },
 ] as const;
 
 export const EQUIPMENT = [
-  "Hydraulic Excavators — 2",
-  "Tipper Hyvas — 4",
+  "Hydraulic Excavator — 2",
+  "Tipper Hyva — 4",
   "Blasting Unit — 1",
-  "JCBs — 2",
-  "Pickups — 2",
-  "Breakers — 2",
-  "Water Pumps — 2",
-  "Tractors — 5",
-  "Air Compressors — 2",
-  "Weighbridge — 1",
+  "JCB — 2",
+  "Pickup — 2",
+  "Breaker — 2",
+  "Water Pump — 2",
+  "Tractor — 3",
+  "Air Compressor — 1",
+  "All Shuttering Material",
 ] as const;
 
 export const BLOG = [
