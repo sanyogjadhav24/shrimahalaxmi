@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { CONTACT } from "@/data/site";
-import logo from "@/assets/logo.jpeg";
+import { Building2 } from "lucide-react";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -35,11 +35,13 @@ export function Header() {
       </div>
       <div className="bg-white border-b border-black/5">
         <div className="max-w-[1280px] mx-auto px-6 h-[92px] flex items-center justify-between gap-6">
-          <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Shri Mahalaxmi Construction logo" className="h-12 w-12 rounded-md object-cover" />
+          <Link to="/" className="flex items-center gap-4 group">
+            <div className="w-12 h-12 bg-[#e07a1f] rounded-lg text-white flex items-center justify-center flex-shrink-0 group-hover:bg-[#c86a17] transition-colors shadow-md">
+              <Building2 size={24} strokeWidth={2.5} />
+            </div>
             <span className="leading-tight">
-              <span className="block font-display font-bold text-[18px] tracking-wide text-[#1e1e2d]">SHRI MAHALAXMI</span>
-              <span className="block text-[11px] tracking-[0.28em] text-[#e07a1f] font-display">CONSTRUCTION</span>
+              <span className="block font-display font-bold text-[20px] tracking-widest text-[#1e1e2d]">SMC</span>
+              <span className="block text-[11px] tracking-[0.25em] text-[#e07a1f] font-display uppercase">Shri Mahalaxmi</span>
             </span>
           </Link>
           <nav className="hidden lg:flex items-center gap-8 font-display uppercase text-[14px] tracking-wider text-[#1e1e2d]">

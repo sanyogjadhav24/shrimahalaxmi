@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Shri Mahalaxmi Construction — Trusted Government Civil Contractor" },
+      { title: "Shri Mahalaxmi Construction | SMC" },
       { name: "description", content: "Class-A registered government contractor delivering roads, bridges, public buildings and municipal infrastructure across Maharashtra since 1998." },
       { name: "author", content: "Shri Mahalaxmi Construction" },
       { property: "og:title", content: "Shri Mahalaxmi Construction" },
