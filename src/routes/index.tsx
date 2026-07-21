@@ -3,11 +3,23 @@ import { SiteLayout } from "@/components/site/Layout";
 import { HeroSlider } from "@/components/site/HeroSlider";
 import { SectionTitle } from "@/components/site/SectionTitle";
 import { TeamRoles } from "@/components/site/TeamRoles";
-import { SERVICES, PROJECTS, WHY_US, TEAM_ROLES, STATS, BLOG, CONTACT } from "@/data/site";
+import { SERVICES, WHY_US, TEAM_ROLES, STATS, BLOG, CONTACT } from "@/data/site";
+import { supabase } from "@/lib/supabase";
 
-export const Route = createFileRoute("/")({ component: Index });
+export const Route = createFileRoute("/")({ 
+  loader: async () => {
+    const { data, error } = await supabase.from('projects').select('*').limit(6).order('year', { ascending: false });
+    if (error) {
+      console.error(error);
+      return { projects: [] };
+    }
+    return { projects: data };
+  },
+  component: Index 
+});
 
 function Index() {
+  const { projects } = Route.useLoaderData();
   return (
     <SiteLayout>
       <HeroSlider />
@@ -79,12 +91,12 @@ function Index() {
         <div className="max-w-[1280px] mx-auto px-6">
           <SectionTitle center eyebrow="Featured Projects" title="Recently Completed Work" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {PROJECTS.map(p => (
+            {projects.map((p: any) => (
               <div key={p.title} className="relative group overflow-hidden">
-                <img src={p.image} alt={p.title} className="w-full h-72 object-cover group-hover:scale-105 transition" />
+                <img src={p.image_url} alt={p.title} className="w-full h-72 object-cover group-hover:scale-105 transition" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#12121b]/90 via-[#12121b]/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <div className="text-[11px] uppercase tracking-[0.28em] text-[#e07a1f] mb-2">{p.cat}</div>
+                  <div className="text-[11px] uppercase tracking-[0.28em] text-[#e07a1f] mb-2">{p.category}</div>
                   <h3 className="font-display font-bold uppercase text-xl mb-1">{p.title}</h3>
                   <div className="text-white/70 text-sm">{p.location} • {p.year}</div>
                 </div>

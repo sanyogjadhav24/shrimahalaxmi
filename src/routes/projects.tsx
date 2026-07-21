@@ -3,16 +3,26 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/Layout";
 import { PageBanner } from "@/components/site/PageBanner";
 import { SectionTitle } from "@/components/site/SectionTitle";
-import { PROJECTS, PROJECT_CATS } from "@/data/site";
+import { PROJECT_CATS } from "@/data/site";
+import { supabase } from "@/lib/supabase";
 
 export const Route = createFileRoute("/projects")({
   head: () => ({ meta: [{ title: "Projects — Shri Mahalaxmi Construction" }, { name: "description", content: "Featured recently completed government infrastructure projects." }] }),
+  loader: async () => {
+    const { data, error } = await supabase.from('projects').select('*').order('year', { ascending: false });
+    if (error) {
+      console.error(error);
+      return { projects: [] };
+    }
+    return { projects: data };
+  },
   component: Projects,
 });
 
 function Projects() {
+  const { projects } = Route.useLoaderData();
   const [cat, setCat] = useState<string>("All");
-  const items = cat === "All" ? PROJECTS : PROJECTS.filter(p => p.cat === cat);
+  const items = cat === "All" ? projects : projects.filter((p: any) => p.category === cat);
   return (
     <SiteLayout>
       <PageBanner eyebrow="Recent work" title="Our Projects" crumb="Projects" />
@@ -25,12 +35,12 @@ function Projects() {
             ))}
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {items.map(p => (
+            {items.map((p: any) => (
               <div key={p.title} className="relative group overflow-hidden">
-                <img src={p.image} alt={p.title} className="w-full h-72 object-cover group-hover:scale-105 transition" />
+                <img src={p.image_url} alt={p.title} className="w-full h-72 object-cover group-hover:scale-105 transition" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#12121b]/90 via-[#12121b]/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <div className="text-[11px] uppercase tracking-[0.28em] text-[#e07a1f] mb-2">{p.cat}</div>
+                  <div className="text-[11px] uppercase tracking-[0.28em] text-[#e07a1f] mb-2">{p.category}</div>
                   <h3 className="font-display font-bold uppercase text-xl mb-1">{p.title}</h3>
                   <div className="text-white/70 text-sm">{p.location} • {p.year}</div>
                 </div>
