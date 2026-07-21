@@ -3,18 +3,22 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/Layout";
 import { PageBanner } from "@/components/site/PageBanner";
 import { SectionTitle } from "@/components/site/SectionTitle";
-import { PROJECT_CATS } from "@/data/site";
+import { PROJECT_CATS, PROJECTS as STATIC_PROJECTS } from "@/data/site";
 import { supabase } from "@/lib/supabase";
 
 export const Route = createFileRoute("/projects")({
   head: () => ({ meta: [{ title: "Projects — Shri Mahalaxmi Construction" }, { name: "description", content: "Featured recently completed government infrastructure projects." }] }),
   loader: async () => {
-    const { data, error } = await supabase.from('projects').select('*').order('year', { ascending: false });
-    if (error) {
-      console.error(error);
-      return { projects: [] };
+    try {
+      const { data, error } = await supabase.from('projects').select('*').order('year', { ascending: false });
+      if (error || !data || data.length === 0) {
+        return { projects: STATIC_PROJECTS.map(p => ({ ...p, category: p.cat, image_url: p.image })) };
+      }
+      return { projects: data };
+    } catch (e) {
+      console.error('[Loader] Failed to fetch projects from Supabase, using static data.', e);
+      return { projects: STATIC_PROJECTS.map(p => ({ ...p, category: p.cat, image_url: p.image })) };
     }
-    return { projects: data };
   },
   component: Projects,
 });

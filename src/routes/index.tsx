@@ -3,17 +3,22 @@ import { SiteLayout } from "@/components/site/Layout";
 import { HeroSlider } from "@/components/site/HeroSlider";
 import { SectionTitle } from "@/components/site/SectionTitle";
 import { TeamRoles } from "@/components/site/TeamRoles";
-import { SERVICES, WHY_US, TEAM_ROLES, STATS, BLOG, CONTACT } from "@/data/site";
+import { SERVICES, WHY_US, TEAM_ROLES, STATS, BLOG, CONTACT, PROJECTS as STATIC_PROJECTS } from "@/data/site";
 import { supabase } from "@/lib/supabase";
 
 export const Route = createFileRoute("/")({ 
   loader: async () => {
-    const { data, error } = await supabase.from('projects').select('*').limit(6).order('year', { ascending: false });
-    if (error) {
-      console.error(error);
-      return { projects: [] };
+    try {
+      const { data, error } = await supabase.from('projects').select('*').limit(6).order('year', { ascending: false });
+      if (error || !data || data.length === 0) {
+        // Fall back to static data if DB is unavailable
+        return { projects: STATIC_PROJECTS.map(p => ({ ...p, category: p.cat, image_url: p.image })) };
+      }
+      return { projects: data };
+    } catch (e) {
+      console.error('[Loader] Failed to fetch projects from Supabase, using static data.', e);
+      return { projects: STATIC_PROJECTS.map(p => ({ ...p, category: p.cat, image_url: p.image })) };
     }
-    return { projects: data };
   },
   component: Index 
 });
