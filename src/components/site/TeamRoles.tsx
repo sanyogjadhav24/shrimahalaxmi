@@ -1,7 +1,7 @@
 type TeamMember = {
   name: string;
   role: string;
-  image: string;
+  image?: string;
 };
 
 type TeamRoleSection = {
@@ -27,10 +27,16 @@ export function TeamRoles({ sections }: { sections: readonly TeamRoleSection[] }
           <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
             {section.members.map((member) => (
               <article key={`${section.title}-${member.name}`} className="overflow-hidden border border-black/5 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <img src={member.image} alt={member.name} className="h-full w-full object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#12121b]/70 via-transparent to-transparent" />
-                </div>
+                {member.image ? (
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img src={member.image} alt={member.name} className="h-full w-full object-cover" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#12121b]/70 via-transparent to-transparent" />
+                  </div>
+                ) : (
+                  <div className="grid aspect-[4/3] place-items-center bg-[#1e1e2d] font-display text-5xl font-bold text-[#e07a1f]" aria-hidden="true">
+                    {member.name.replace("Mr. ", "").split(" ").map((part) => part[0]).join("")}
+                  </div>
+                )}
                 <div className="p-5">
                   <h4 className="font-display text-xl font-bold uppercase text-[#1e1e2d]">{member.name}</h4>
                   <p className="mt-2 text-sm uppercase tracking-[0.24em] text-[#e07a1f]">{member.role}</p>

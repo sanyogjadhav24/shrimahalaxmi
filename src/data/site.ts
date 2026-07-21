@@ -1,5 +1,4 @@
 import MD_IMAGE from "../assets/MD.jpg";
-import ACC_IMAGE from "../assets/Acco.jpeg";
 
 export const CONTACT = {
   address: "Vaishnav Nivas, Dawkharmala Shiroli Trfe ale, Tal- Junnar, Dist-Pune 412411",
@@ -10,23 +9,23 @@ export const CONTACT = {
 
 export const HERO_SLIDES = [
   {
-    subtitle: "Building The Nation",
-    title: "Trusted Government\nCivil Contractor",
-    text: "Delivering large-scale infrastructure, roads, bridges and public works with precision, safety and on-time completion since 1998.",
+    subtitle: "Building the Future",
+    title: "Civil & Earthwork\nSpecialists",
+    text: "Established in 2024, we deliver road construction, infrastructure, civil and earthwork projects with dedication and care.",
     cta: { label: "Discover More", to: "/services" },
     image: "https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?crop=entropy&cs=srgb&fm=jpg&q=85",
   },
   {
     subtitle: "Infrastructure Excellence",
-    title: "Bridges, Roads &\nPublic Structures",
-    text: "Class-A registered contractor with PWD, NHAI and Municipal Corporations across Maharashtra.",
+    title: "Roads, Bridges &\nStructures",
+    text: "Supporting specialised infrastructure works including culverts, retaining walls, side drains and road construction.",
     cta: { label: "Our Projects", to: "/projects" },
     image: "https://images.unsplash.com/photo-1633363961301-4f100a78e92d?crop=entropy&cs=srgb&fm=jpg&q=85",
   },
   {
     subtitle: "Engineering the Future",
-    title: "Strong Foundations\nStronger Communities",
-    text: "Over two decades of building the infrastructure that connects, protects and powers India.",
+    title: "Strong Foundations\nFor Every Project",
+    text: "A capable team, skilled workforce and owned equipment fleet for civil construction and infrastructure work.",
     cta: { label: "Get a Quote", to: "/contact" },
     image: "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?crop=entropy&cs=srgb&fm=jpg&q=85",
   },
@@ -53,87 +52,51 @@ export const PROJECTS = [
 export const PROJECT_CATS = ["All", "Roads & Highways", "Bridges", "Public Buildings", "Water Works", "Industrial"] as const;
 
 export const WHY_US = [
-  { title: "Class-A Registered", desc: "Government approved contractor with PWD, NHAI, MJP and Municipal Corporations." },
-  { title: "ISO 9001:2015 Certified", desc: "Quality Management System certified for civil engineering and infrastructure work." },
-  { title: "On-Time Delivery", desc: "Proven track record of completing projects on schedule and within budget." },
-  { title: "Safety First", desc: "Strict adherence to workplace safety standards and worker welfare policies." },
-];
-
-export const TEAM = [
-  { name: "Prathamesh Jadhav", role: "Managing Director", image: MD_IMAGE },
-  { name: "Anil Patil", role: "Chief Engineer", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80" },
-  { name: "Suresh Kulkarni", role: "Project Manager", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80" },
-  { name: "Vikram Jadhav", role: "Site Supervisor", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" },
+  { title: "Infrastructure Focus", desc: "Specialised civil and infrastructure work for roads, culverts, bridges, retaining walls and drainage." },
+  { title: "Capable Workforce", desc: "Qualified engineering and mechanical staff supported by skilled and unskilled labour teams." },
+  { title: "Owned Equipment", desc: "An in-house fleet that supports excavation, earthwork, transport and on-site operations." },
+  { title: "Dedicated Team", desc: "A director-led company focused on dependable execution and steady growth." },
 ];
 
 export const TEAM_ROLES = [
   {
-    title: "MD",
-    summary: "Overall leadership and business direction.",
+    title: "Board of Directors",
+    summary: "Leadership and business direction.",
     members: [
-      { name: "Prathamesh Jadhav", role: "Managing Director", image: MD_IMAGE },
-    ],
-  },
-  {
-    title: "CORE MEMBERS",
-    summary: "Key people supporting day-to-day execution.",
-    members: [
-      { name: "Anil Patil", role: "Chief Engineer", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80" },
-      { name: "Suresh Kulkarni", role: "Project Manager", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=80" },
-      { name: "Vikram Jadhav", role: "Site Supervisor", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80" },
-    ],
-  },
-  {
-    title: "MANAGING TEAM",
-    summary: "Planning, coordination, and project control.",
-    members: [
-      { name: "Prathamesh Jadhav", role: "Managing Director", image: MD_IMAGE },
-      { name: "Suresh Kulkarni", role: "Project Manager", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=80" },
-    ],
-  },
-  {
-    title: "ACCOUNTANTS",
-    summary: "Billing, accounts, and finance support.",
-    members: [
-      { name: "Sanyog Jadhav", role: "Accountant", image: ACC_IMAGE },
-    ],
-  },
-  {
-    title: "ENGINEERS",
-    summary: "Site engineering and technical supervision.",
-    members: [
-      { name: "Anil Patil", role: "Chief Engineer", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80" },
-    ],
-  },
-  {
-    title: "SAFETY ENGINEER",
-    summary: "Health, safety, and compliance monitoring.",
-    members: [
-      { name: "Open Position", role: "Safety Engineer", image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80" },
-    ],
-  },
-  {
-    title: "MATERIAL INCHARGE",
-    summary: "Procurement and material coordination.",
-    members: [
-      { name: "Trushant Jadhav", role: "Material Incharge", image: "https://images.unsplash.com/photo-1519608425089-7f3bfa9e7e0b?w=800&q=80" },
-    ],
-  },
-  {
-    title: "MECHANICAL ENGINEER",
-    summary: "Plant, equipment, and machinery oversight.",
-    members: [
-      { name: "Open Position", role: "Mechanical Engineer", image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80" },
+      { name: "Mr. Prathamesh Jadhav", role: "Director", image: MD_IMAGE },
+      { name: "Mr. Gunjal Sanjay", role: "Director" },
+      { name: "Mr. Fulmali Rajendra", role: "Director" },
+      { name: "Mr. Gunjal Prasad", role: "Director" },
     ],
   },
 ] as const;
 
 export const STATS = [
-  { value: "27+", label: "Years of Experience" },
-  { value: "340+", label: "Projects Delivered" },
-  { value: "180+", label: "Skilled Workforce" },
-  { value: "42", label: "Government Awards" },
+  { value: "2024", label: "Established" },
+  { value: "4", label: "Board Members" },
+  { value: "50", label: "Skilled Labourers" },
+  { value: "100", label: "Unskilled Labourers" },
 ];
+
+export const WORKFORCE = [
+  { role: "Engineering Staff", count: "4" },
+  { role: "Mechanical Staff", count: "10" },
+  { role: "Skilled Labourers", count: "50" },
+  { role: "Unskilled Labourers", count: "100" },
+] as const;
+
+export const EQUIPMENT = [
+  "Hydraulic Excavators — 2",
+  "Tipper Hyvas — 4",
+  "Blasting Unit — 1",
+  "JCBs — 2",
+  "Pickups — 2",
+  "Breakers — 2",
+  "Water Pumps — 2",
+  "Tractors — 5",
+  "Air Compressors — 2",
+  "Weighbridge — 1",
+] as const;
 
 export const BLOG = [
   { cat: "Infrastructure", date: "Jun 12, 2025", author: "Admin", title: "The Future of Highway Construction in India", desc: "How new materials and smart engineering are reshaping our national road network.", image: "https://images.unsplash.com/photo-1587582423116-ec07293f0395?crop=entropy&cs=srgb&fm=jpg&q=85" },
