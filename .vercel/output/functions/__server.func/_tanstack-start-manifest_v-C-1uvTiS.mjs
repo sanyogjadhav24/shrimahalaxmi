@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-9bjn_Vb8.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-C-1uvTiS.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "E:/shreemahalaxmi/shrimahalaxmiconstruction/src/routes/__root.tsx",
@@ -14,7 +14,7 @@ var tsrStartManifest = () => ({ routes: {
 			"/api/contact"
 		],
 		preloads: [
-			"/assets/index-B8CyWaCO.js",
+			"/assets/index-Y98NI2RF.js",
 			"/assets/jsx-runtime-bzQ4Vb5N.js",
 			"/assets/link-DbIpms5H.js",
 			"/assets/Match-DfZewqiI.js",
@@ -24,16 +24,15 @@ var tsrStartManifest = () => ({ routes: {
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-B8CyWaCO.js"
+			src: "/assets/index-Y98NI2RF.js"
 		} }]
 	},
 	"/": {
 		filePath: "E:/shreemahalaxmi/shrimahalaxmiconstruction/src/routes/index.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/routes-C8MYw5ah.js",
-			"/assets/site-B5k5_Psl.js",
-			"/assets/Layout-Cf1yJv3I.js",
+			"/assets/routes-CS9Lj2GF.js",
+			"/assets/Layout-oP_E022h.js",
 			"/assets/SectionTitle-By5tyxkv.js",
 			"/assets/TeamRoles-CW0szSga.js"
 		]
@@ -42,9 +41,8 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "E:/shreemahalaxmi/shrimahalaxmiconstruction/src/routes/about.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/about-DrB706Gw.js",
-			"/assets/site-B5k5_Psl.js",
-			"/assets/Layout-Cf1yJv3I.js",
+			"/assets/about-DsJ435jo.js",
+			"/assets/Layout-oP_E022h.js",
 			"/assets/PageBanner-CT8Fhaje.js",
 			"/assets/SectionTitle-By5tyxkv.js",
 			"/assets/TeamRoles-CW0szSga.js"
@@ -57,15 +55,14 @@ var tsrStartManifest = () => ({ routes: {
 			"/admin/projects/new",
 			"/admin/projects/"
 		],
-		preloads: ["/assets/admin-B9bIGor0.js", "/assets/Layout-Cf1yJv3I.js"]
+		preloads: ["/assets/admin-Ddl-pACl.js", "/assets/Layout-oP_E022h.js"]
 	},
 	"/contact": {
 		filePath: "E:/shreemahalaxmi/shrimahalaxmiconstruction/src/routes/contact.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/contact-g8sGLtOR.js",
-			"/assets/site-B5k5_Psl.js",
-			"/assets/Layout-Cf1yJv3I.js",
+			"/assets/contact-OwVddjtW.js",
+			"/assets/Layout-oP_E022h.js",
 			"/assets/PageBanner-CT8Fhaje.js",
 			"/assets/SectionTitle-By5tyxkv.js"
 		]
@@ -73,15 +70,14 @@ var tsrStartManifest = () => ({ routes: {
 	"/login": {
 		filePath: "E:/shreemahalaxmi/shrimahalaxmiconstruction/src/routes/login.tsx",
 		children: void 0,
-		preloads: ["/assets/login-KCE0mt4H.js", "/assets/Layout-Cf1yJv3I.js"]
+		preloads: ["/assets/login-Dtxl7QoF.js", "/assets/Layout-oP_E022h.js"]
 	},
 	"/projects": {
 		filePath: "E:/shreemahalaxmi/shrimahalaxmiconstruction/src/routes/projects.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/projects-CRDBSHqY.js",
-			"/assets/site-B5k5_Psl.js",
-			"/assets/Layout-Cf1yJv3I.js",
+			"/assets/projects-BKODa572.js",
+			"/assets/Layout-oP_E022h.js",
 			"/assets/PageBanner-CT8Fhaje.js",
 			"/assets/SectionTitle-By5tyxkv.js"
 		]
@@ -90,9 +86,8 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "E:/shreemahalaxmi/shrimahalaxmiconstruction/src/routes/services.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/services-BaygzSva.js",
-			"/assets/site-B5k5_Psl.js",
-			"/assets/Layout-Cf1yJv3I.js",
+			"/assets/services-B3oWnE3r.js",
+			"/assets/Layout-oP_E022h.js",
 			"/assets/PageBanner-CT8Fhaje.js",
 			"/assets/SectionTitle-By5tyxkv.js"
 		]
@@ -100,17 +95,17 @@ var tsrStartManifest = () => ({ routes: {
 	"/admin/": {
 		filePath: "E:/shreemahalaxmi/shrimahalaxmiconstruction/src/routes/admin/index.tsx",
 		children: void 0,
-		preloads: ["/assets/admin-B3hBfoIc.js"]
+		preloads: ["/assets/admin-BMrD9zIT.js"]
 	},
 	"/admin/projects/new": {
 		filePath: "E:/shreemahalaxmi/shrimahalaxmiconstruction/src/routes/admin/projects/new.tsx",
 		children: void 0,
-		preloads: ["/assets/new-DWtj33Yb.js", "/assets/site-B5k5_Psl.js"]
+		preloads: ["/assets/new-DHDelyJu.js"]
 	},
 	"/admin/projects/": {
 		filePath: "E:/shreemahalaxmi/shrimahalaxmiconstruction/src/routes/admin/projects/index.tsx",
 		children: void 0,
-		preloads: ["/assets/projects-BMTpybsq.js"]
+		preloads: ["/assets/projects-DvUgstVe.js"]
 	}
 } });
 //#endregion

@@ -1,9 +1,9 @@
 import { o as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as useNavigate, f as Outlet, g as Link, l as useLocation } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as SiteLayout } from "./Layout-CoCZtaet.mjs";
-import { t as supabase } from "./supabase-CABxuFtT.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/admin-D3wtYmf9.js
+import { t as SiteLayout } from "./Layout-SLk0Bz9z.mjs";
+import { t as supabase } from "./supabase-ClWdGkyA.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/admin-BvwdJ9bI.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function AdminLayout() {

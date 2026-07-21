@@ -1,9 +1,9 @@
 import { o as __toESM } from "../_runtime.mjs";
-import { i as PROJECT_CATS } from "./site-CrHWebk2.mjs";
+import { a as PROJECT_CATS } from "./site-BTPBI16-.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as useNavigate } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as supabase } from "./supabase-CABxuFtT.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/new-Df1E5UCd.js
+import { t as supabase } from "./supabase-ClWdGkyA.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/new-CtGOSab_.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function NewProject() {

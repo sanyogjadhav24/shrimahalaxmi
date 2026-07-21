@@ -1,11 +1,11 @@
 import { o as __toESM } from "../_runtime.mjs";
-import { i as PROJECT_CATS } from "./site-CrHWebk2.mjs";
+import { a as PROJECT_CATS } from "./site-BTPBI16-.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { t as SiteLayout } from "./Layout-CoCZtaet.mjs";
+import { t as SiteLayout } from "./Layout-SLk0Bz9z.mjs";
 import { t as PageBanner } from "./PageBanner-DQGGheOF.mjs";
 import { t as SectionTitle } from "./SectionTitle-BZ9pgjOw.mjs";
-import { t as Route } from "./projects-Ic4S1p7p.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/projects-ChYx8abV.js
+import { t as Route } from "./projects-DPBOiBI_.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/projects-Z3x8Yqtb.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function Projects() {

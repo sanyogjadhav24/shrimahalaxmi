@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/site-CrHWebk2.js
+//#region node_modules/.nitro/vite/services/ssr/assets/site-BTPBI16-.js
 var MD_default = "/assets/MD-zhAmEb5_.jpg";
 var Acco_default = "/assets/Acco-D9vb9Na8.jpeg";
 var CONTACT = {
@@ -69,6 +69,50 @@ var SERVICES = [
 		title: "Industrial Construction",
 		desc: "Warehouses, factories and MIDC industrial civil work with structural steel and RCC.",
 		image: "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?crop=entropy&cs=srgb&fm=jpg&q=85"
+	}
+];
+var PROJECTS = [
+	{
+		cat: "Roads & Highways",
+		title: "Pune-Solapur Highway Expansion",
+		location: "Maharashtra",
+		year: "2024",
+		image: "https://images.unsplash.com/photo-1587582423116-ec07293f0395?crop=entropy&cs=srgb&fm=jpg&q=85"
+	},
+	{
+		cat: "Bridges",
+		title: "Krishna River RCC Bridge",
+		location: "Sangli, MH",
+		year: "2023",
+		image: "https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?crop=entropy&cs=srgb&fm=jpg&q=85"
+	},
+	{
+		cat: "Public Buildings",
+		title: "District Hospital, Satara",
+		location: "Satara, MH",
+		year: "2023",
+		image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=srgb&fm=jpg&q=85"
+	},
+	{
+		cat: "Water Works",
+		title: "MIDC Water Pipeline Grid",
+		location: "Pune, MH",
+		year: "2022",
+		image: "https://images.unsplash.com/photo-1559843788-693858bf7338?crop=entropy&cs=srgb&fm=jpg&q=85"
+	},
+	{
+		cat: "Industrial",
+		title: "Chakan Industrial Warehouse",
+		location: "Chakan, MH",
+		year: "2024",
+		image: "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?crop=entropy&cs=srgb&fm=jpg&q=85"
+	},
+	{
+		cat: "Bridges",
+		title: "Nashik Flyover Project",
+		location: "Nashik, MH",
+		year: "2022",
+		image: "https://images.unsplash.com/photo-1633363961301-4f100a78e92d?crop=entropy&cs=srgb&fm=jpg&q=85"
 	}
 ];
 var PROJECT_CATS = [
@@ -232,4 +276,4 @@ var BLOG = [
 	}
 ];
 //#endregion
-export { SERVICES as a, WHY_US as c, PROJECT_CATS as i, CONTACT as n, STATS as o, HERO_SLIDES as r, TEAM_ROLES as s, BLOG as t };
+export { PROJECT_CATS as a, TEAM_ROLES as c, PROJECTS as i, WHY_US as l, CONTACT as n, SERVICES as o, HERO_SLIDES as r, STATS as s, BLOG as t };

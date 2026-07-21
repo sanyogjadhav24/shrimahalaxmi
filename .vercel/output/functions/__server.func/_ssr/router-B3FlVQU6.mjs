@@ -1,14 +1,14 @@
 import { o as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { c as HeadContent, d as createRouter, f as Outlet, g as Link, h as createRootRouteWithContext, m as createFileRoute, p as lazyRouteComponent, s as Scripts, v as useRouter } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as Route$11 } from "./projects-Ic4S1p7p.mjs";
-import { t as Route$12 } from "./routes-BTIIaRsc.mjs";
+import { t as Route$11 } from "./projects-DPBOiBI_.mjs";
+import { t as Route$12 } from "./routes-Cpcft4hi.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
 import { n as stringType, r as ZodError, t as objectType } from "../_libs/zod.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-Do8Agtj2.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-B3FlVQU6.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var style_default = "/assets/style-Dxey-264.css";
+var style_default = "/assets/style-BcyTrwKD.css";
 function reportLovableError(error, options) {
 	if (options?.boundary) {
 		console.error(`[${options.boundary}]`, error);
@@ -161,7 +161,7 @@ function RootComponent() {
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {})
 	});
 }
-var $$splitComponentImporter$7 = () => import("./about-CVyn7PUq.mjs");
+var $$splitComponentImporter$7 = () => import("./about-Bbtu2Xpg.mjs");
 var Route$9 = createFileRoute("/about")({
 	head: () => ({ meta: [{ title: "About — Shri Mahalaxmi Construction" }, {
 		name: "description",
@@ -169,9 +169,9 @@ var Route$9 = createFileRoute("/about")({
 	}] }),
 	component: lazyRouteComponent($$splitComponentImporter$7, "component")
 });
-var $$splitComponentImporter$6 = () => import("./admin-D3wtYmf9.mjs");
+var $$splitComponentImporter$6 = () => import("./admin-BvwdJ9bI.mjs");
 var Route$8 = createFileRoute("/admin")({ component: lazyRouteComponent($$splitComponentImporter$6, "component") });
-var $$splitComponentImporter$5 = () => import("./contact-DgqVrKlb.mjs");
+var $$splitComponentImporter$5 = () => import("./contact-BQ5XH89j.mjs");
 var Route$7 = createFileRoute("/contact")({
 	head: () => ({ meta: [{ title: "Contact — Shri Mahalaxmi Construction" }, {
 		name: "description",
@@ -179,9 +179,9 @@ var Route$7 = createFileRoute("/contact")({
 	}] }),
 	component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-var $$splitComponentImporter$4 = () => import("./login-s8NSxpjZ.mjs");
+var $$splitComponentImporter$4 = () => import("./login-BTukgpY3.mjs");
 var Route$6 = createFileRoute("/login")({ component: lazyRouteComponent($$splitComponentImporter$4, "component") });
-var $$splitComponentImporter$3 = () => import("./services-DXNjY_dd.mjs");
+var $$splitComponentImporter$3 = () => import("./services-Du3pcqCA.mjs");
 var Route$5 = createFileRoute("/services")({
 	head: () => ({ meta: [{ title: "Services — Shri Mahalaxmi Construction" }, {
 		name: "description",
@@ -202,7 +202,7 @@ var Route$4 = createFileRoute("/sitemap.xml")({ server: { handlers: { GET: async
 		"Cache-Control": "public, max-age=3600"
 	} });
 } } } });
-var $$splitComponentImporter$2 = () => import("./admin-CdYp1vFy.mjs");
+var $$splitComponentImporter$2 = () => import("./admin-CghNPffm.mjs");
 var Route$3 = createFileRoute("/admin/")({ component: lazyRouteComponent($$splitComponentImporter$2, "component") });
 var contactSubmissionSchema = objectType({
 	name: stringType().trim().min(2, "Name is required"),
@@ -285,9 +285,9 @@ var Route$2 = createFileRoute("/api/contact")({ server: { handlers: { POST: asyn
 		}, { status: 500 });
 	}
 } } } });
-var $$splitComponentImporter$1 = () => import("./projects-DTvEnD0g.mjs");
+var $$splitComponentImporter$1 = () => import("./projects-DJzOas77.mjs");
 var Route$1 = createFileRoute("/admin/projects/")({ component: lazyRouteComponent($$splitComponentImporter$1, "component") });
-var $$splitComponentImporter = () => import("./new-Df1E5UCd.mjs");
+var $$splitComponentImporter = () => import("./new-CtGOSab_.mjs");
 var Route = createFileRoute("/admin/projects/new")({ component: lazyRouteComponent($$splitComponentImporter, "component") });
 var IndexRoute = Route$12.update({
 	id: "/",
