@@ -78,13 +78,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Shri Mahalaxmi Construction | SMC" },
-      { name: "description", content: "Class-A registered government contractor delivering roads, bridges, public buildings and municipal infrastructure across Maharashtra since 1998." },
+      { title: "Shri Mahalaxmi Construction | Government Contractor & Civil Engineering Experts" },
+      { name: "description", content: "Class-A registered government contractor delivering roads, bridges, public buildings and municipal infrastructure across Maharashtra. Established 2024 by Prathamesh Jadhav." },
+      { name: "keywords", content: "government contractor, civil engineering, road construction, bridge construction, infrastructure, Maharashtra, PWD, municipal projects, earthwork, HPC structures" },
       { name: "author", content: "Shri Mahalaxmi Construction" },
-      { property: "og:title", content: "Shri Mahalaxmi Construction" },
-      { property: "og:description", content: "Trusted government civil contractor building India's infrastructure since 1998." },
+      { name: "robots", content: "index, follow" },
+      { name: "google-site-verification", content: "google9c27aaa56cf9aa12.html" },
+      { property: "og:title", content: "Shri Mahalaxmi Construction | Government Contractor & Civil Engineering Experts" },
+      { property: "og:description", content: "Trusted government civil contractor building Maharashtra's infrastructure. Roads, bridges, public buildings, and municipal projects." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://shrimahalaxmiconstruction.com" },
+      { property: "og:site_name", content: "Shri Mahalaxmi Construction" },
+      { property: "og:locale", content: "en_US" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Shri Mahalaxmi Construction | Government Contractor" },
+      { name: "twitter:description", content: "Class-A government contractor delivering quality infrastructure across Maharashtra since 2024." },
     ],
     links: [
       {
@@ -95,6 +103,34 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ConstructionBusiness",
+          "name": "Shri Mahalaxmi Construction",
+          "description": "Class-A registered government contractor delivering roads, bridges, public buildings and municipal infrastructure across Maharashtra. Established 2024 by Prathamesh Jadhav.",
+          "url": "https://shrimahalaxmiconstruction.com",
+          "telephone": "+91-9876543210",
+          "email": "info@shrimahalaxmiconstruction.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Maharashtra",
+            "addressCountry": "IN"
+          },
+          "foundingDate": "2024",
+          "founder": {
+            "@type": "Person",
+            "name": "Prathamesh Jadhav"
+          },
+          "areaServed": "Maharashtra",
+          "priceRange": "$$$",
+          "openingHours": "Mo-Su 00:00-23:59",
+          "serviceType": ["Road Construction", "Bridge Construction", "Public Buildings", "Municipal Infrastructure", "Civil Engineering", "Earthwork"]
+        }),
+      },
     ],
   }),
   shellComponent: RootShell,

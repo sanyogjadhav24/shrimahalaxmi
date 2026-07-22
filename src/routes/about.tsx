@@ -6,7 +6,15 @@ import { TeamRoles } from "@/components/site/TeamRoles";
 import { WHY_US, TEAM_ROLES, STATS, CONTACT, WORKFORCE, EQUIPMENT } from "@/data/site";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({ meta: [{ title: "About — Shri Mahalaxmi Construction" }, { name: "description", content: "Class-A government contractor with 28+ years building India's infrastructure." }] }),
+  head: () => ({
+    meta: [
+      { title: "About Us — Shri Mahalaxmi Construction | Government Contractor" },
+      { name: "description", content: "Learn about Shri Mahalaxmi Construction - Class-A government contractor established in 2024 by Prathamesh Jadhav. Expert in civil engineering, road construction, and infrastructure projects across Maharashtra." },
+      { name: "keywords", content: "about Shri Mahalaxmi Construction, Prathamesh Jadhav, government contractor Maharashtra, civil engineering company, infrastructure projects" },
+      { property: "og:title", content: "About Us — Shri Mahalaxmi Construction" },
+      { property: "og:description", content: "Class-A government contractor with dedicated team, owned equipment, and expertise in civil and infrastructure work across Maharashtra." },
+    ]
+  }),
   component: About,
 });
 

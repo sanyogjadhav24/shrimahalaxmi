@@ -6,7 +6,15 @@ import { SectionTitle } from "@/components/site/SectionTitle";
 import { CONTACT } from "@/data/site";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({ meta: [{ title: "Contact — Shri Mahalaxmi Construction" }, { name: "description", content: "Get in touch for tender queries, project inquiries and consultations." }] }),
+  head: () => ({
+    meta: [
+      { title: "Contact Us — Shri Mahalaxmi Construction | Get Quote" },
+      { name: "description", content: "Contact Shri Mahalaxmi Construction for tender queries, project inquiries, and consultations. Class-A government contractor serving Maharashtra. Call us or visit our office." },
+      { name: "keywords", content: "contact government contractor, construction company contact, tender queries, project inquiry, Maharashtra construction contact" },
+      { property: "og:title", content: "Contact Us — Shri Mahalaxmi Construction" },
+      { property: "og:description", content: "Get in touch for tender queries, project inquiries and consultations. Our engineering team responds within one business day." },
+    ]
+  }),
   component: Contact,
 });
 

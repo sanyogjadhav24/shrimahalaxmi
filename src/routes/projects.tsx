@@ -7,7 +7,15 @@ import { PROJECT_CATS, PROJECTS as STATIC_PROJECTS } from "@/data/site";
 import { supabase } from "@/lib/supabase";
 
 export const Route = createFileRoute("/projects")({
-  head: () => ({ meta: [{ title: "Projects — Shri Mahalaxmi Construction" }, { name: "description", content: "Featured recently completed government infrastructure projects." }] }),
+  head: () => ({
+    meta: [
+      { title: "Our Projects — Shri Mahalaxmi Construction | Infrastructure Portfolio" },
+      { name: "description", content: "View our portfolio of completed government infrastructure projects including roads, bridges, public buildings, and municipal works across Maharashtra." },
+      { name: "keywords", content: "construction projects portfolio, government infrastructure projects, road construction projects, bridge construction Maharashtra, civil engineering portfolio" },
+      { property: "og:title", content: "Our Projects — Shri Mahalaxmi Construction" },
+      { property: "og:description", content: "Featured recently completed government infrastructure projects including roads, bridges, and public buildings." },
+    ]
+  }),
   loader: async () => {
     try {
       const { data, error } = await supabase.from('projects').select('*').order('year', { ascending: false });

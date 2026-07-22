@@ -7,7 +7,19 @@ import { SERVICES, WHY_US, TEAM_ROLES, STATS, BLOG, CONTACT, PROJECTS as STATIC_
 import { supabase } from "@/lib/supabase";
 import { useState, useEffect } from "react";
 
-export const Route = createFileRoute("/")({ component: Index });
+export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Shri Mahalaxmi Construction | Government Contractor & Civil Engineering Experts" },
+      { name: "description", content: "Class-A registered government contractor delivering roads, bridges, public buildings and municipal infrastructure across Maharashtra. Established 2024 by Prathamesh Jadhav." },
+      { name: "keywords", content: "government contractor, civil engineering, road construction, bridge construction, infrastructure, Maharashtra, PWD, municipal projects, earthwork, HPC structures" },
+      { property: "og:title", content: "Shri Mahalaxmi Construction | Government Contractor" },
+      { property: "og:description", content: "Trusted government civil contractor building Maharashtra's infrastructure. Roads, bridges, public buildings, and municipal projects." },
+      { property: "og:type", content: "website" },
+    ]
+  }),
+  component: Index
+});
 
 function Index() {
   const [projects, setProjects] = useState(

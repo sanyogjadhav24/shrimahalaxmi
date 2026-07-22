@@ -5,7 +5,15 @@ import { SectionTitle } from "@/components/site/SectionTitle";
 import { SERVICES, WHY_US } from "@/data/site";
 
 export const Route = createFileRoute("/services")({
-  head: () => ({ meta: [{ title: "Services — Shri Mahalaxmi Construction" }, { name: "description", content: "Roads, bridges, public buildings, water works and industrial civil construction services." }] }),
+  head: () => ({
+    meta: [
+      { title: "Our Services — Shri Mahalaxmi Construction | Civil Engineering Services" },
+      { name: "description", content: "Comprehensive civil engineering services including road construction, bridge building, public buildings, water works, and industrial construction across Maharashtra." },
+      { name: "keywords", content: "civil engineering services, road construction services, bridge construction, public building construction, water works Maharashtra, industrial construction" },
+      { property: "og:title", content: "Our Services — Shri Mahalaxmi Construction" },
+      { property: "og:description", content: "Roads, bridges, public buildings, water works and industrial civil construction services by Class-A government contractor." },
+    ]
+  }),
   component: Services,
 });
 
